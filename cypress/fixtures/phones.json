@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "availableSizes": [
+                "Apple"
+            ],
+            "currencyFormat": "$",
+            "currencyId": "USD",
+            "description": "iPhone 12",
+            "id": 1,
+            "installments": 9,
+            "isFav": false,
+            "price": 999,
+            "sku": "iPhone12-device-info.png",
+            "title": "Apple iPhone 15 Pro Max"
+        },
+        {
+            "availableSizes": [
+                "Apple"
+            ],
+            "currencyFormat": "$",
+            "currencyId": "USD",
+            "description": "iPhone 12 Mini",
+            "id": 2,
+            "installments": 9,
+            "isFav": false,
+            "price": 666,
+            "sku": "iPhone12-device-info.png",
+            "title": "Samsung Galaxy S23 Ultra"
+        }
+    ]
+}
