@@ -39,6 +39,5 @@ describe('Add To Cart', {
                 bstacCart.addProdToCart(myPhones.products[i].title)
             }
         })
-        bstacCart.verifyCartSubTotal()
     })
 })

@@ -49,17 +49,17 @@ describe('Add To Cart', () => {
         bstacCart.addProdToCart(prod)
         cy.reload()
         bstacCart.getBagOpenLocator().click()
-        bstacCart.findItemInCart(prod).should('exists')
+        bstacCart.getItemInCart(prod)
     })
 
-    it.only('- button should be disabled quantity = 1', () => {
+    it('- button should be disabled when quantity = 1', () => {
         let prod = 'iPhone 12'
         bstacCart.addProdToCart(prod)
         bstacCart.getMunusQuantityButton().should('be.disabled')
 
     })
 
-    it.only('+ button should be enabled', () => {
+    it('+ button should be enabled', () => {
         let prod = 'iPhone 12'
         bstacCart.addProdToCart(prod)
         bstacCart.getPlusQuantityButton().should('be.enabled')
@@ -67,8 +67,9 @@ describe('Add To Cart', () => {
     })
 
     it('x should close the cart', () => {
-        bstacCart.getBagOpenLocator().click()
-        bstacCart.closeBagWindow().contains('X').click()
+        bstacCart.getBagOpenLocator().click().then(() => {
+            bstacCart.closeBagWindow()
+        })
         bstacCart.getCartWindow().should('not.exist')
     })
 

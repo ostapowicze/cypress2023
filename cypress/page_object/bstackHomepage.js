@@ -64,9 +64,8 @@ addPricesToArray(){
         })
     })
     cy.log(pricesArray)
-    //return pricesArray
+    return pricesArray
 }
-//[800, 700, 600] 700 - 800 = -100
 checkIfSorted(pricesArray){
             let second_index;
             for(let first_index = 0; first_index < pricesArray.length; first_index++){

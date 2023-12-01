@@ -1,6 +1,5 @@
 export class BstackCart {
 
-    visitPageUrl = Cypress.config("baseUrlPhones")
     bagLocator = '[class ="bag bag--float-cart-closed"]'
     cartContainer = '[class*="content"] > [class*="container"]'
     cartQuantity = '[class="bag"] > [class = "bag__quantity"]'
