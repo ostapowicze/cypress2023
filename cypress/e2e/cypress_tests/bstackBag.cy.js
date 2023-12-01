@@ -141,18 +141,3 @@ describe('Add To Cart', () => {
 
 
 
-
-
-
-//test czy jesy jest jeden jako quanitity to -  jest disabled
-//jak wywali na force true to pobrac celego htmla i usunac element ktory przykrywa, get body i remove po lokatorze co chce usuna / czeka az element bedzie klikalny i dopiero klika
-//cypress cloud co to zapoznac się
-//print screeny pobawic sie 
-//porownywanie obrazow, wtyczka cypresss pozwala robic printscreeny,  
-
-
-//github git
-
-
-
-//jak wejsc 2 poziomy wyzej nie uzywajac dwa razy parent()
